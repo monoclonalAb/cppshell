@@ -2,9 +2,12 @@
 
 #pragma once
 
+#include <optional>
+#include <string>
+
 void repl_loop();
 
-void repl_read_line();
+std::optional<std::string> repl_read_line();
 
 void repl_execute_line();
 
